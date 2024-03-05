@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore Unknown Destinations</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Italiana&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" >
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <style>
+
+        html{
+            overflow-x: hidden;
+        }
+
+        *{
+            margin: 0;
+            padding: 0;
+            
+        }
+        body{
+           
+            background-color: #cddb7c;
+}
+.dropdown-content-icon,
+.dropdown-content-home,
+.dropdown-content-contact,
+.dropdown-content-about{
+    margin: auto;
+    width: max-content;
+}
+
+.dropdown-content-icon,
+.dropdown-content-home,
+.dropdown-content-contact,
+.dropdown-content-about{
+    display: block;
+}
+
+.dropdown-content-icon,
+.dropdown-content-home,
+.dropdown-content-contact,
+.dropdown-content-about{
+    display: none;
+    float: right;
+    
+    background-color: #f9f9f9;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+#home,
+#contact,
+#about{
+    border: none;
+    background-color: #f9f9f9;
+    font-size: large;
+    font-weight: 800;
+}
+
+.dropdown-content-icon button,
+.dropdown-content-home a,
+.dropdown-content-contact a,
+.dropdown-content-about a
+{
+    padding: 12px 16px;
+    display: block;
+}
+.dropdown-content-icon #home:hover,
+.dropdown-content-icon #contact:hover,
+.dropdown-content-icon #about:hover,
+.dropdown-content-home a:hover,
+.dropdown-content-contact a:hover,
+.dropdown-content-about a:hover
+ {
+    background-color: #E1F2CD;
+}
+.icon-dropdown img{
+    width: 40px;
+    float: right;
+}
+.nav{
+    height: 40px;
+    background-color: #2d3e46;
+}
+.nav ul li{
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 2px 5px;
+    
+}
+.nav ul li:hover{
+    transform: scale(1.02);
+}
+.nav ul li a{
+    color: white;
+    text-decoration: none;
+}
+       
+        .image{
+            width: 100%;
+        }
+        .image p{
+            font-size: medium;
+    padding: 6px;
+    margin: 7px;
+    color:#f6d6a6;
+        }
+        
+        
+        .box{
+            background-image: url(background.PNG);
+            padding: 3px 4px;
+            height:634px;
+            width:100% ;
+            background-repeat: no-repeat;
+            
+
+        }
+        .image img{
+            float: right;
+            padding: 10px 10px;
+            border-radius: 20px;
+        }
+        
+        .image h1{
+            float: left;
+            width: 0%;
+            padding:10px;
+            font-size: 330%;
+            font-family: 'italiana', sans-serif;
+            color:#f6d6a6;
+            
+           
+        }
+        .image img{
+            float: right;
+            width: 300px;
+            margin-top: 200px;
+        }
+        .image img:hover{
+            transform: scale(1.03);
+        }
+       p1{
+        float: left;
+    width: 0%;
+    font-size: 200%;
+    margin-left: 30%;
+    padding: 8px 0px;
+        }
+        .items img {
+            width: 300px;
+    height: 200px;
+    border-radius: 10px;
+    border: 10px solid #73633e;
+    margin: 10px;
+        }
+        .items img:hover{
+            transform: scale(1.03);
+        }
+        #container{
+    width:90%;
+    margin:auto;
+    overflow:hidden;
+    text-align: center;
+   
+}
+.items {
+    display: inline-block;
+    text-align: center;
+    margin: 10px;
+    line-height:1.42857143; 
+    border-radius: 4px;
+    
+} 
+.items a{
+    text-decoration: none;
+}
+.items a:hover{
+    text-decoration: underline;
+}
+button.btn.btn-sm{
+    color: rgb(10, 10, 10);
+    background-color: rgb(164 170 177);
+    padding: 4px 4px;
+    margin: 5px;
+    border-radius: 4px;
+}
+button.btn.btn-sm:hover{
+    transform: scale(1.02);
+}
+.items h2{
+    color: black;
+}
+.image2 p2{
+    font-size: large;
+}
+#box2 {
+    overflow: auto;
+    padding: 20px 20px; 
+    /* margin: 0px 0px; */
+    width: 100%;
+    background-color: #333;
+    height: 500px;
+   
+}
+img{
+    width: 1000px;
+    text-align: center;
+}
+P3{
+    float: right;
+}
+p4{
+    text-align: center;
+    font-size: 200%;
+    text-decoration: underline;
+    
+}
+p2{
+   
+    font-size: large;
+}
+#box2 img{
+    width: 30%;
+    margin: 20px;
+    float: right;
+    margin: 40px;
+}
+.Footer{
+    background-color: #333;
+    text-align: center;
+    padding: 20px;
+    font-size: larger;
+}
+
+    </style>
+</head>
+<body>
+    
+    <div class="nav">
+        <a href="#" class="icon-dropdown" id="iconDropdown"><img src="thumbnail.avif" alt=""></a>
+                        <div id="dropdownContenticon" class="dropdown-content-icon">
+
+                           <a href="index.html"><button id="home" >HOME </button></a> 
+                            <a href="contact.html"><button id="contact">CONTACT </button></a>
+                            <a href="#box2"><button id="about">ABOUT </button></a>
+                            </div>
+                            <ul><li><a href="login.html">LOGIN</a></li>
+                                <li><a href="signup.html">SIGN UP</a></li>
+                            </ul>
+    </div>
+   <div class="box">
+    <div class="image">
+        <h1>EXPLORE UNKNOWN <br>
+            DESTINATIONS</h1>
+            <br><br><br><br><br><br><br><br><br><br><br>
+            <p>DISCOVER, LEARN <br> IMMERSE, CONNECT</p>
+        <a target="_blank" href="#container"> <img src="explore.png" alt=""></a>
+    </div>
+   </div>
+
+   <br><br>
+
+ 
+       <div id="container">
+        <div class="items">
+            <a href="Mp.html"> 
+               <img src="istockphoto-1195731546-170667a.webp" alt=""> 
+                <div class="caption">
+                    <h2>Madhya Pradesh</h2>
+                    <button class="btn btn-sm"><h3>Explore Now</h3></button>
+                </div></div>
+                <div class="items">
+                    <a href="uttarakhand.html"> 
+                       <img src="uttarakhand.webp" alt=""> 
+                        <div class="caption">
+                            <h2>Uttrakhand</h2>
+                            <button class="btn btn-sm"><h3>Explore Now</h3></button>
+                        </div>
+                    </div>
+                    <div class="items">
+                        <a href="gujrat.html"> 
+                           <img src="akshardham_temple-ahmedabad-2.jpg" alt=""> 
+                            <div class="caption">
+                                <h2>Gujrat</h2>
+                                <button class="btn btn-sm" ><h3>Explore Now</h3></button>
+                            </div>
+                        </div>
+
+                <div class="items">
+                    <a href="maharashtra.html"> 
+                       <img src="maharashtra.jpg" alt=""> 
+                        <div class="caption">
+                            <h2>Maharashtra</h2>
+                            <button class="btn btn-sm" ><h3>Explore Now</h3></button>
+                        </div>
+                    </div>
+                    <div class="items">
+                        <a href="kerela.html"> 
+                           <img src="kerela.jpg" alt=""> 
+                            <div class="caption">
+                                <h2>Kerela</h2>
+                                <button class="btn btn-sm" ><h3>Explore Now</h3></button>
+                            </div>
+                        </div>
+                            <div class="items">
+                                <a href=""> 
+                                   <img src="himachal pradesh.jfif" alt=""> 
+                                    <div class="caption">
+                                        <h2>Himachal Pradesh</h2>
+                                        <button class="btn btn-sm" ><h3>Explore Now</h3></button></a>
+                                    </div>
+                                </div>
+               
+            </div>
+                <br><br>
+  <div id="box2">
+    <div class="image2">
+   <img src="about.PNG" alt="">
+   
+        <p4>About Us:</p4>
+        <br><br>
+        <p2>
+            <br> Unraveling the Mysteries of Unknown India
+             <br><br>
+            Welcome to our corner of the internet, dedicated to unraveling the mysteries of Unknown India. Here, we delve deep into the heart of the country, seeking out hidden destinations, secret spots, and untold stories that often escape the spotlight.
+            <br><br>
+            India is a land of boundless diversity, where every turn reveals a new wonder waiting to be discovered. From remote villages nestled in the Himalayas to serene oases hidden in the Thar Desert, our mission is to shine a light on the lesser-known corners of this incredible country.
+            <br><br>
+            Through our passion for exploration and storytelling, we aim to inspire fellow adventurers to step off the beaten path and immerse themselves in the rich tapestry of cultures, landscapes, and experiences that Unknown India has to offer.
+            <br><br>
+            Join us on this journey of discovery as we uncover the hidden gems and lesser-explored destinations that make India truly extraordinary. Together, let's embark on an adventure into the unknown, where every new discovery is a testament to the beauty and diversity of our beloved homeland.
+        </div></div>
+            <br><br><br>
+            <div class="Footer"><p5>Copyright @Explore Unknown Destinations All Rights Reserved</p5></div>
+            
+        </p2>
+   
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                var iconDropdown = document.getElementById("iconDropdown");
+                var dropdownContenticon = document.getElementById("dropdownContenticon");
+                var dropdownContentHOME = document.getElementById("dropdownContentHOME");
+                var dropdownContentCONTACT = document.getElementById("dropdownContentCONTACT");
+                var dropdownContentSERVICES = document.getElementById("dropdownContentSERICES");
+                var dropdownContentABOUT = document.getElementById("dropdownContentABOUT");
+        
+                iconDropdown.addEventListener("click", function (event) {
+                    event.stopPropagation();
+                    if (dropdownContenticon.style.display === "block") {
+                        dropdownContenticon.style.display = "none";
+                    } else {
+                        dropdownContenticon.style.display = "block";
+                    }
+                });
+        
+                var home = document.getElementById("home");
+                var contact = document.getElementById("contact");
+                var about = document.getElementById("about");
+                var services = document.getElementById("services");
+        
+                home.addEventListener("click", function (event) {
+                    event.stopPropagation();
+                    if (dropdownContentTrash.style.display === "block") {
+                        dropdownContentTrash.style.display = "none";
+                    } else {
+                        dropdownContentTrash.style.display = "block";
+                    }
+                });
+        
+                contact.addEventListener("click", function (event) {
+                    event.stopPropagation();
+                    if (dropdownContentCreations.style.display === "block") {
+                        dropdownContentCreations.style.display = "none";
+                    } else {
+                        dropdownContentCreations.style.display = "block";
+                    }
+                });
+                about.addEventListener("click", function (event) {
+                    event.stopPropagation();
+                    if (dropdownContentCreations.style.display === "block") {
+                        dropdownContentCreations.style.display = "none";
+                    } else {
+                        dropdownContentCreations.style.display = "block";
+                    }
+                });
+                services.addEventListener("click", function (event) {
+                    event.stopPropagation();
+                    if (dropdownContentCreations.style.display === "block") {
+                        dropdownContentCreations.style.display = "none";
+                    } else {
+                        dropdownContentCreations.style.display = "block";
+                    }
+                });
+        
+                window.addEventListener("click", function (event) {
+                    dropdownContenticon.style.display = "none";
+                    dropdownContentTrash.style.display = "none";
+                    dropdownContentCreations.style.display = "none";
+                });
+            });
+        
+        
+        </script>
+</body>
+</html>
